@@ -18,8 +18,14 @@ const Home = () => {
     }, []);
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-            <Table bordered hover responsive style={{ maxWidth: 600 }}>
+        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', 
+            // marginLeft:30, marginRight:30 
+            }}>
+            <Table bordered hover responsive style={{ 
+                    maxWidth: 400, 
+                    // marginLeft:30, 
+                    // marginRight:30
+                }}>
                 {/* <Table bordered hover responsive > */}
                 {/* <thead>
                     <tr>

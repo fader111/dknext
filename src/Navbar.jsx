@@ -9,7 +9,8 @@ const NavigationBar = () => {
     const [activeKey, setActiveKey] = useState('#home');
 
     return (
-        <Navbar bg="primary" variant="dark" expand="sm" style={{ width: "90%", top:20}}>
+        <Navbar bg="primary" variant="dark" expand="sm" style={{ width: "100%", top:20}}>
+        {/* <Navbar bg="primary" variant="dark" expand="sm" style={{ alignContent: "center", top:20}}> */}
             <Container>
                 <Navbar.Brand href="/">ДК</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
