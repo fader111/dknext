@@ -14,7 +14,7 @@ const Home = ({ configData }) => {
     // console.log("home call")
     return (
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-            <Table bordered hover responsive style={{ maxWidth: 400, }}>
+            <Table bordered hover responsive style={{ maxWidth: 600, }}>
                 {/* <Table bordered hover responsive > */}
                 {/* <thead>
                     <tr>
@@ -35,7 +35,7 @@ const Home = ({ configData }) => {
                     </tr>
                     <tr>
                         <th scope="row">Режим работы</th>
-                        <td>Локальный, текущая фаза - <b>{addr}</b></td>
+                        <td>{configData.mode=="local"? "Локальный" : "Дистанционный"}, текущая фаза - <b>{addr}</b></td>
                     </tr>
                     <tr>
                         <th scope="row">Дата, Время</th>
