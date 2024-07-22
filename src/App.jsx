@@ -1,18 +1,22 @@
 // src/App.jsx
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from './Navbar';
-import './App.css';
+import Home from './Home';
+import './index.css';
+
 
 function App() {
   return (
-    <div style={{width:"80%"}}>
-      <NavigationBar />
-      <div className="container mt-3">
-        {/* <h2>Welcome to My React App</h2> */}
-        <p>Адрес: Ул. Красноармейская 12</p>
-        <p>Адрес: Ул. Красноармейская 12</p>
-      </div>
-    </div>
+    <Router>
+        <NavigationBar />
+        <div className="content-container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* Add more routes here as needed */}
+          </Routes>
+        </div>
+    </Router>
   );
 }
 
