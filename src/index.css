@@ -46,6 +46,20 @@ body, html {
   width:90%;
 } */
 
+.btn-group {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Align to the right */
+}
+
+.btn-check {
+  margin-right: 5px; /* Space between checkboxes */
+}
+
+.btn {
+  margin-right: 10px; /* Space between buttons */
+}
+
 a {
   font-weight: 500;
   color: #646cff;
